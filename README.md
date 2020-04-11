@@ -31,3 +31,8 @@ openjdk version "9-internal"
 OpenJDK Runtime Environment (fastdebug build 9-internal+0-adhoc.root.jdk9)
 OpenJDK 64-Bit Server VM (fastdebug build 9-internal+0-adhoc.root.jdk9, mixed mode)
 </pre>
+
++ 导入idea ，hotspot目录
+	- 按 docs/mac下编译openjdk1.9及集成clion动态调试 - 简书.pdf操作
+	- hotspot (C++ 代码)
+	
