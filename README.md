@@ -55,13 +55,14 @@ OpenJDK 64-Bit Server VM (fastdebug build 9-internal+0-adhoc.root.jdk9, mixed mo
 
 + 在你的java ide中，把jdk选择自己编译的jdk，再执行
 	- jre选/Users/kingsonwu/Personal/C-source-code/jdk9/build/macosx-x86_64-normal-server-fastdebug/jdk
-	
+
 
 
 
 + jdk (java 底层源码)
 
 + JNI
+	- Utils4Java/jdk-lib/src/main/java/com/kxw/jni/Demo01.java
 
 
 
