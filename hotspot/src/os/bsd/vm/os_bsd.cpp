@@ -975,6 +975,7 @@ jlong os::javaTimeNanos() {
   // Avoiding excessive CAS operations to hot RW locations is critical.
   // See https://blogs.oracle.com/dave/entry/cas_and_cache_trivia_invalidate
   return (prev == obsv) ? now : obsv;
+  //return 666;
 }
 
 #else // __APPLE__

@@ -35,4 +35,34 @@ OpenJDK 64-Bit Server VM (fastdebug build 9-internal+0-adhoc.root.jdk9, mixed mo
 + 导入idea ，hotspot目录
 	- 按 docs/mac下编译openjdk1.9及集成clion动态调试 - 简书.pdf操作
 	- hotspot (C++ 代码)
+
++ 与java程序联合调试
+	- `-Xms100M -XX:+UseConcMarkSweepGC Main`
+	- `/Users/kingsonwu/Personal/C-source-code/jdk9/java/main.java`
+	- 修改源码：src/os/bsd/vm/os_bsd.cpp
+	- build jvm - make - /Users/kingsonwu/Personal/C-source-code/jdk9
+		<pre>
+		make
+		rm: /Users/kingsonwu/Personal/C-source-code/jdk9/build/macosx-x86_64-normal-server-fastdebug/make-support/main-targets.gmk: Permission denied
+		make[1]: *** [main] Error 1
+		make: *** [default] Error 2
+		</pre>
+		- 没成功！！
+		- 在 /Users/kingsonwu/Personal/C-source-code/jdk9 目录执行 sudo make
+	- compile java - javac - /Users/kingsonwu/Personal/C-source-code/jdk9/java/src/Main.java - $ProjectFileDir$
+
+	- sudo chown kingsonwu:staff  /Users/kingsonwu/Personal/C-source-code/jdk9/build/macosx-x86_64-normal-server-fastdebug/make-support/main-targets.gmk
+
++ 在你的java ide中，把jdk选择自己编译的jdk，再执行
+	- jre选/Users/kingsonwu/Personal/C-source-code/jdk9/build/macosx-x86_64-normal-server-fastdebug/jdk
 	
+
+
+
++ jdk (java 底层源码)
+
++ JNI
+
+
+
+
